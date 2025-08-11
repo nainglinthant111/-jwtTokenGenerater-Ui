@@ -38,8 +38,8 @@ const items = [
 
 export function AppSidebar() {
     return (
-        <Sidebar className="border-gray-300">
-            <SidebarContent>
+        <Sidebar className="border-gray-300 bg-gray-50">
+            <SidebarContent className="bg-gray-50">
                 <SidebarGroup className="p-0">
                     <SidebarGroupLabel className="mx-0 w-full h-50 flex flex-col bg-gradient-to-tr from-emerald-700 to-emerald-600 text-white text-2xl font-semibold rounded-bl-6xl  pt-10  rounded-br-full">
                         <div className="pl-4 w-full">Token Generator</div>
