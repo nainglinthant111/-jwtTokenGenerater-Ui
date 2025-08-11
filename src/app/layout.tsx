@@ -2,7 +2,17 @@ import "./globals.css";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/App/app-sidebar";
 import Header from "@/components/App/Header";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Generate Token",
+    description: "Generate Token for Developer",
+    generator: "Next.js",
+    icons: {
+        icon: "/logo.png",
+        shortcut: "/logo.png",
+    },
+};
 export default function RootLayout({
     children,
 }: {
