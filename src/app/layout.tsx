@@ -5,12 +5,12 @@ import Header from "@/components/App/Header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Generate Token",
+    title: "Token Generator",
     description: "Generate Token for Developer",
     generator: "Next.js",
     icons: {
-        icon: "/logo.png",
-        shortcut: "/logo.png",
+        icon: "/favicon.ico",
+        shortcut: "/favicon.ico",
     },
 };
 export default function RootLayout({
