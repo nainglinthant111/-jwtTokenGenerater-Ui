@@ -10,7 +10,6 @@ export async function generateToken(
     secretKey: string,
     payload: unknown
 ): Promise<string> {
-    console.log("start");
     const { data } = await axios.post<{ token: string }>(
         url + "/generate-token",
         payload,
@@ -18,6 +17,15 @@ export async function generateToken(
             headers: { "x-secret-key": secretKey },
         }
     );
-    console.log("data", data);
     return data.token;
+}
+export async function convertJson(
+    secretKey: string,
+    token: string
+): Promise<unknown> {
+    const { data } = await axios.get(url + "/get-json", {
+        params: { token }, // <-- query param
+        headers: { "x-secret-key": secretKey },
+    });
+    return data.data;
 }

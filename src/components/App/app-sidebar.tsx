@@ -15,7 +15,7 @@ import { Separator } from "../ui/separator";
 // Menu items.
 const items = [
     {
-        title: "Dos",
+        title: "Home",
         url: "/",
         icon: Home,
     },
